@@ -31,7 +31,7 @@ export default function Home() {
         <div className="h-screen md:w-1/2 w-[95%] flex flex-row items-center justify-center">
           <div className="md:h-[90%] md:w-[90%] w-full h-full rounded-lg grey-bg md:p-6 p-2 text-gray-300 font-regular ">
             <button>
-              <div className="position relative md:top-6 md:right-6 w-14 h-14 rounded-full bg-blue-500 hover:bg-blue-700 text-white  t-white flex justify-center items-center">
+              <div className="position md:fixed  md:top-6 md:right-6 w-14 h-14 rounded-full bg-blue-500 hover:bg-blue-700 text-white  t-white flex justify-center items-center">
                 <HiOutlineDocumentDuplicate />
               </div>
             </button>
