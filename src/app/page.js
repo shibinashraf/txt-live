@@ -3,17 +3,17 @@ import { HiOutlineDocumentDuplicate } from "react-icons/hi";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-screen main-bg flex flex-col">
-      <div className="flex md:justify-start justify-center md:pl-16 items-center h-[7rem] istok w-full fixed top-0 text-4xl font-bold text-white">
+    <div className="overflow-hidden main-bg flex flex-col">
+      <div className="h-[7rem] w-screen main-bg istok flex md:justify-start md:pl-24 font-bold justify-center items-center text-white text-4xl">
         <span className="text-blue-500">txt</span>.live
       </div>
-      <div className="md:h-screen w-full flex md:flex-row flex-col items-center ">
-        <div className="h-screen md:w-1/2 w-full  flex flex-col  items-center justify-center">
+      <div className="md:h-[40rem] w-screen flex  md:flex-row flex-col md:items-center justify-center">
+        <div className="h-full md:w-1/2 w-full  flex flex-col items-center justify-center">
           <div className="text-white font-bold text-2xl istok mb-6">
             Your Link
           </div>
           <div className="flex flex-wrap">
-            <div className="md:w-[24rem] bg-white rounded-xl p-4 mr-4">
+            <div className="md:w-[24rem] w-[10rem] bg-white rounded-xl p-4 mr-4">
               copy your link
             </div>
             <button>
@@ -26,19 +26,26 @@ export default function Home() {
             Copy the link or scan the code below to visit this page on other
             devices
           </div>
-          <div className="mt-8 w-[15rem] h-[15rem] bg-white rounded-xl p-4 mr-4"></div>
+          <div className="mt-8 mb-8 w-[15rem] h-[15rem] hover:scale-110 ease-in-out duration-300 bg-white rounded-xl "></div>
         </div>
-        <div className="h-screen md:w-1/2 w-[95%] flex flex-row items-center justify-center">
-          <div className="md:h-[90%] md:w-[90%] w-full h-full rounded-lg grey-bg md:p-6 p-2 text-gray-300 font-regular ">
-            <button>
-              <div className="position md:fixed  md:top-6 md:right-6 w-14 h-14 rounded-full bg-blue-500 hover:bg-blue-700 text-white  t-white flex justify-center items-center">
-                <HiOutlineDocumentDuplicate />
-              </div>
-            </button>
-            Type here
-          </div>
+        <div className="md:h-full h-[35rem] md:w-1/2 md:p-6 p-4 w-full  flex flex-col items-center justify-center">
+          <textarea
+            placeholder="Type here.."
+            className="h-[30rem] w-full rounded-lg grey-bg md:p-6 p-6 text-gray-300 font-regular "
+          ></textarea>
+          <button>
+            <div className="mt-4 md:w-[20rem] p-2 h-12 rounded-lg bg-blue-500 hover:bg-blue-700 text-white  t-white flex flex-wrap justify-center items-center">
+              copy to clip board &nbsp;
+              <HiOutlineDocumentDuplicate />
+            </div>
+          </button>
         </div>
       </div>
+      <ul className="md:h-12 flex md:flex-row flex-wrap gap-8 text-white istok md:justify-end justify-center items-center p-8 bg-gray-800">
+        <li>About</li>
+        <li>Contact us</li>
+        <li>Privacy Policy</li>
+      </ul>
     </div>
   );
 }
