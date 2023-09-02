@@ -7,7 +7,7 @@ export default function Home() {
       <div className="h-[7rem] w-screen main-bg istok flex md:justify-start md:pl-24 font-bold justify-center items-center text-white text-4xl">
         <span className="text-blue-500">txt</span>.live
       </div>
-      <div className="md:h-[40rem] w-screen flex  md:flex-row flex-col md:items-center justify-center">
+      <div className="md:h-[40rem] md:p-4 w-screen flex  md:flex-row flex-col md:items-center justify-center">
         <div className="h-full md:w-1/2 w-full  flex flex-col items-center justify-center">
           <div className="text-white font-bold text-2xl istok mb-6">
             Your Link
