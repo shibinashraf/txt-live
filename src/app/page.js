@@ -64,7 +64,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <ul className="md:h-24 flex md:flex-row flex-wrap gap-8 dark:text-white  text-gray-600 text-lg istok  md:justify-end justify-center items-center md:items-center  px-8 bg-gray-100  dark:bg-gray-800">
+      <ul className="md:h-24  h-14 flex md:flex-row flex-wrap gap-8 dark:text-white  text-gray-600 text-lg istok  md:justify-end justify-center items-center md:items-center  px-8 bg-gray-100  dark:bg-gray-800">
         <li>About</li>
         <li>Contact us</li>
         <li>Privacy Policy</li>
