@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import { HiOutlineDocumentDuplicate } from "react-icons/hi";
+import { BsSunFill, BsFillMoonStarsFill } from "react-icons/bs";
+
 import { useTheme, useSetTheme } from "./theme.store";
 import { useState, useEffect } from "react";
 export default function Home() {
@@ -22,13 +24,18 @@ export default function Home() {
   const setTheme = useSetTheme();
   return (
     <div className="overflow-hidden dark:bg-gray-900 bg-white flex flex-col">
-      <button onClick={setTheme}>
-        <div className="fixed top-8 right-8 w-14 h-14 rounded-full bg-blue-500 hover:bg-blue-700 text-white  t-white flex flex-wrap justify-center items-center">
-          mode
+      <div className="h-[7rem] w-screen bg-white text-black dark:bg-gray-900 istok flex gap-12 md:justify-between p-12 font-bold justify-center items-center dark:text-white text-4xl">
+        <div>
+          <span className="text-blue-500">txt</span>.live
         </div>
-      </button>
-      <div className="h-[7rem] w-screen bg-white text-black dark:bg-gray-900 istok flex md:justify-start md:pl-24 font-bold justify-center items-center dark:text-white text-4xl">
-        <span className="text-blue-500">txt</span>.live
+        <div>
+          {" "}
+          <button onClick={setTheme}>
+            <div className=" w-12 h-12 p-2 rounded-full  dark:text-white text-black t-white flex flex-wrap justify-center items-center">
+              {theme === "light" ? <BsFillMoonStarsFill /> : <BsSunFill />}
+            </div>
+          </button>
+        </div>
       </div>
       <div className="md:h-[40rem] md:p-4 w-screen flex  md:flex-row flex-col md:items-center justify-center">
         <div className="h-full md:w-1/2 w-full  flex flex-col items-center justify-center">
